@@ -1,0 +1,70 @@
+body {
+  background-image: linear-gradient(to right,black 0%,white 100%),url("https://lifeonabranch.files.wordpress.com/2013/05/dwight-impersonation-the-office.png");
+  background-position: center;
+  background-blend-mode: screen;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* display: flex; */
+  /* justify-content: space-between; */
+}
+
+h3  {
+  color: red;
+  font-size: 200px;
+  margin: 0;
+}
+
+h4 {
+  font-size: 75px;
+  margin: 0;
+}
+
+.main-1 {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  width: 60%;
+  justify-content: center;
+  align-items: center;
+  height: 900px;
+}
+
+.hidden {
+  display: none;
+}
+
+.main-2 {
+  float: right;
+  /* background-color: black; */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.options {
+  display: inline;
+  float: right;
+}
+
+.cool-things {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 70px 20px 70px;
+  border: 3px solid black;
+}
+
+img {
+  border: 3px solid black;
+}
+
+.test {
+  color: red;
+  font-weight: bold;
+}

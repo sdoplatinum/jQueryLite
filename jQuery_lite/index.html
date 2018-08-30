@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script type="text/javascript" src="./lib/jquery_lite.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Bear Gifs</title>
+
+  </head>
+  <body class="a">
+    <div class="main-1 hidden" id="main-1">
+      <h3>FALSE!</h3>
+      <h4>BLACK BEAR</h4>
+    </div>
+    <div class="main-2">
+
+      <h1>jQuery Test Site - with Bear Gifs</h1>
+
+      <div class="cool-things">
+
+        <label for="methods">Cool Things</label>
+        <div class="methods">
+          <ul>
+            <li>Bears</li>
+            <li>Beats</li>
+            <li>Battle-Star Galactica</li>
+          </ul>
+        </div>
+      </div>
+
+      <form class="form" action="index.html" method="post">
+        <h2>Which Bear is best?</h2>
+        <img src="https://ewedit.files.wordpress.com/2015/01/the-office-jim-dwight_l_0.jpg" alt="" id="jim">
+        <div class="options" id="options">
+          <label for="">Black Bear</label>
+          <input type="radio" name="best-bear" value="" class="bear-radio-button" id="black_bear"> <br>
+          <label for="">Brown Bear</label>
+          <input type="radio" name="best-bear" value="" class="bear-radio-button"><br>
+          <label for="">Grizzly Bear</label>
+          <input type="radio" name="best-bear" value="" class="bear-radio-button"><br>
+          <label for="">Polar Bear</label>
+          <input type="radio" name="best-bear" value="" class="bear-radio-button"><br>
+        </div>
+      </form>
+
+      <a href="#">Funny Gif</a>
+      <a href="#">Funnier Gif</a>
+
+      <img src="https://media.giphy.com/media/IThjAlJnD9WNO/giphy.gif" alt="">
+
+      <script type="text/javascript">
+        let options = document.getElementById("options");
+        let main1 = document.getElementById("main-1");
+        options.addEventListener("mouseover", function () {
+          main1.classList.remove("hidden");
+          setTimeout(()=> {alert("FALSE - BLACK BEAR!");}, 0);
+        })
+        options.addEventListener("mouseleave", function () {
+          main1.classList.add("hidden");
+        })
+      </script>
+    </div>
+  </body>
+</html>
